@@ -4,6 +4,9 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import Navigation from "./components/Navigation";
+import Breadcrumb from "./components/Breadcrumb";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -23,35 +26,40 @@ import Downloads from "./pages/Downloads";
 
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/about"} component={About} />
-      <Route path={"/services"} component={Services} />
-      <Route path={"/for-families"} component={ForFamilies} />
-      <Route path={"/for-caregivers"} component={ForCaregivers} />
-      <Route path={"/community-impact"} component={CommunityImpact} />
-      <Route path={"/funding-partnerships"} component={FundingPartnerships} />
-      <Route path={"/careers"} component={Careers} />
-      <Route path={"/blog"} component={Blog} />
-      <Route path={/^\/blog\/.+$/} component={BlogArticle} />
-      <Route path={"/contact"} component={Contact} />
-      <Route path={"/support"} component={Support} />
-      <Route path={"/apply/caregiver"} component={CaregiverApplication} />
-      <Route path={"/apply/family"} component={FamilyApplication} />
-      <Route path={"/admin"} component={AdminDashboard} />
-      <Route path={"/resources"} component={Downloads} />
-      <Route path={"/404"} component={NotFound} />
-      <Route component={NotFound} />
-    </Switch>
+    <div className="flex flex-col min-h-screen">
+      <Navigation />
+      <Breadcrumb />
+      <main className="flex-1">
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/services" component={Services} />
+          <Route path="/for-families" component={ForFamilies} />
+          <Route path="/for-caregivers" component={ForCaregivers} />
+          <Route path="/community-impact" component={CommunityImpact} />
+          <Route path="/funding-partnerships" component={FundingPartnerships} />
+          <Route path="/careers" component={Careers} />
+          <Route path="/blog" component={Blog} />
+          <Route path={/^\/blog\/.+$/} component={BlogArticle} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/support" component={Support} />
+          <Route path="/apply/caregiver" component={CaregiverApplication} />
+          <Route path="/apply/family" component={FamilyApplication} />
+          <Route path="/admin" component={AdminDashboard} />
+          <Route path="/resources" component={Downloads} />
+          <Route path="/404" component={NotFound} />
+          <Route component={NotFound} />
+        </Switch>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
           <Router />
