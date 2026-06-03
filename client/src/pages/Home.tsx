@@ -1,8 +1,10 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Heart, Users, Zap, Globe, CheckCircle2, Shield, TrendingUp, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "wouter";
 
 /**
  * ForeverGreen Staffing Solutions - Organizational Website
@@ -13,6 +15,11 @@ import { useState } from "react";
  */
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [activeTab, setActiveTab] = useState("caregivers");
 
   const highlights = [
@@ -170,10 +177,10 @@ export default function Home() {
               We connect families with caregivers they can trust. We pay caregivers fairly. And we put money back into communities that need it. That's it. That's the whole thing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setLocation("/apply/caregiver")}>
                 Join Our Team <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => setLocation("/apply/family")}>
                 Find a Caregiver
               </Button>
             </div>
@@ -348,7 +355,7 @@ export default function Home() {
           <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center">
             <h3 className="text-2xl font-bold mb-4">Ready to Make a Real Difference?</h3>
             <p className="mb-6 text-lg">We're hiring caregivers who care. Let's talk.</p>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setLocation("/apply/caregiver")}>
               Apply Now <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
@@ -375,7 +382,7 @@ export default function Home() {
           <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center">
             <h3 className="text-2xl font-bold mb-4">Let's Find the Right Caregiver</h3>
             <p className="mb-6 text-lg">Tell us what you need. We'll listen and find someone who's a good fit.</p>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setLocation("/apply/family")}>
               Get Started <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>

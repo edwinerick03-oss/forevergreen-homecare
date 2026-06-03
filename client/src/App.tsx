@@ -6,14 +6,20 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Downloads from "./pages/Downloads";
-
+import CaregiverApplication from "./pages/CaregiverApplication";
+import FamilyApplication from "./pages/FamilyApplication";
+import AdminDashboard from "./pages/AdminDashboard";
 
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/resources"} component={Downloads} />
       <Route path={"/downloads"} component={Downloads} />
+      <Route path={"/apply/caregiver"} component={CaregiverApplication} />
+      <Route path={"/apply/family"} component={FamilyApplication} />
+      <Route path={"/admin"} component={AdminDashboard} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
