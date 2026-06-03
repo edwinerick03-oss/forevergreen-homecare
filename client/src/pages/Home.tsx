@@ -7,15 +7,9 @@ import { useState } from "react";
 /**
  * ForeverGreen Staffing Solutions - Organizational Website
  * Design: Modern Institutional Excellence with Mission Focus
+ * Voice: Natural, authentic, human - not corporate
  * Color Scheme: Forest Green (#1B5E3F) + Gold (#D4A574)
  * Typography: Playfair Display (headers) + Inter (body)
- * 
- * Target Audiences:
- * - Caregivers seeking meaningful work
- * - Families needing reliable in-home care
- * - Adult Family Homes seeking staffing solutions
- * - DSHS case managers and partners
- * - Investors and mission-aligned partners
  */
 
 export default function Home() {
@@ -24,100 +18,100 @@ export default function Home() {
   const highlights = [
     {
       icon: Shield,
-      title: "Values-Based Hiring",
-      description: "Rigorous screening for commitment, emotional maturity, and cultural competence—not just credentials."
+      title: "We Actually Care Who We Hire",
+      description: "We don't just check boxes. We look for people who show up, who care about their clients, and who are in this for the right reasons."
     },
     {
       icon: Heart,
-      title: "Dual-Impact Mission",
-      description: "Every contract reinvests into programs supporting single mothers locally and children in Ghana."
+      title: "Your Work Goes Further",
+      description: "Every hour you work helps families here in Washington AND supports kids and women in Ghana. That's not just a job—that's impact."
     },
     {
       icon: Zap,
-      title: "Proven Model",
-      description: "CNA staffing with 33% margins, low overhead, and recurring revenue from DSHS and private clients."
+      title: "It Actually Works",
+      description: "CNA staffing is a proven model. Good margins, steady work, and we're built lean so we can actually pay you well and keep things running."
     },
     {
       icon: Users,
-      title: "Relationship-Driven",
-      description: "Hands-on support and direct communication that builds trust with families, AFHs, and partners."
+      title: "Real Relationships",
+      description: "We're not some big corporate machine. You'll talk to us directly. We listen. We solve problems. We treat people like people."
     }
   ];
 
   const ventureHighlights = [
-    "Completed state-required Home Care Agency Administrator training",
-    "Validated demand through direct conversations with families and caregivers",
-    "Built comprehensive 5-year financial model with revenue projections",
-    "Conducted extensive market research on Washington's long-term care system",
-    "Developed complete business plan with operations and compliance strategy",
-    "Created values-based hiring model and go-to-market strategy",
-    "Established dual-impact mission supporting local and global communities",
-    "Designed scalable plan to serve 30 clients within 3–5 years"
+    "Completed the state training to get licensed as a Home Care Agency",
+    "Talked to real families struggling to find reliable caregivers—they confirmed we're solving a real problem",
+    "Built a 5-year financial plan that actually makes sense",
+    "Did the research on Washington's care system and DSHS",
+    "Wrote out a real business plan with operations and hiring standards",
+    "Figured out how to reach families—through DSHS, Adult Family Homes, and community",
+    "Designed a mission that matters: supporting single moms locally and kids in Ghana",
+    "Built a plan to serve 30 clients in 3-5 years while keeping margins healthy and caregivers supported"
   ];
 
   const businessMetrics = [
-    { label: "Billing Rate", value: "$30/hour", icon: TrendingUp },
-    { label: "Caregiver Pay", value: "$20/hour", icon: Users },
-    { label: "Margin", value: "33%", icon: Zap },
-    { label: "Avg Client Hours", value: "30/month", icon: Clock },
-    { label: "Raised to Date", value: "$1,000", icon: Globe },
-    { label: "TAM", value: "$4.5B", icon: TrendingUp }
+    { label: "We Bill", value: "$30/hr", icon: TrendingUp },
+    { label: "We Pay Caregivers", value: "$20/hr", icon: Users },
+    { label: "That's a Margin of", value: "33%", icon: Zap },
+    { label: "Average Care Per Client", value: "30 hrs/mo", icon: Clock },
+    { label: "Raised So Far", value: "$1,000", icon: Globe },
+    { label: "Market Size", value: "$4.5B", icon: TrendingUp }
   ];
 
   const caregiverBenefits = [
     {
-      title: "Meaningful Work",
-      description: "Care for vulnerable adults with a company that values your wellbeing and professional growth"
+      title: "Work That Matters",
+      description: "You're not just filling shifts. You're giving families peace of mind and helping vulnerable people get the care they deserve."
     },
     {
-      title: "Stable Income",
-      description: "Consistent, predictable hours with competitive pay and reliable scheduling"
+      title: "Steady Paychecks",
+      description: "Predictable hours, reliable pay, no guessing games. We believe you should know what you're making and when."
     },
     {
-      title: "Support & Community",
-      description: "Join a team that treats you with respect and invests in your development"
+      title: "You're Part of a Team",
+      description: "Not a number. We know your name, your story, and we actually care about your wellbeing."
     },
     {
-      title: "Impact Beyond Borders",
-      description: "Know that your work supports programs helping families in Ghana and your local community"
+      title: "Global Impact",
+      description: "Know that your work is helping kids and families in Ghana. Every hour you work creates opportunity somewhere else."
     }
   ];
 
   const familyBenefits = [
     {
-      title: "Reliability You Can Trust",
-      description: "Vetted, professional caregivers who show up and provide consistent, compassionate care"
+      title: "Caregivers You Can Trust",
+      description: "We don't just hire anyone. We find people who actually care and show up when they say they will."
     },
     {
-      title: "Perfect Matching",
-      description: "Caregivers matched based on values, personality, and specific care needs—not just availability"
+      title: "The Right Match",
+      description: "We listen to what you need and match you with someone who gets it. Not just whoever's available."
     },
     {
       title: "Peace of Mind",
-      description: "Direct communication with our team and transparent, professional service"
+      description: "You can talk to us directly. No runaround. Just real people helping you get the care your loved one deserves."
     },
     {
-      title: "Values-Aligned Care",
-      description: "Support from a company that treats caregivers well and reinvests into communities"
+      title: "Values That Align",
+      description: "You're working with a company that treats caregivers right and puts money back into communities that need it."
     }
   ];
 
   const goToMarketChannels = [
     {
-      channel: "DSHS Contracting",
-      description: "Home Care Agency License enables direct contracts with DSHS for Medicaid-funded clients"
+      channel: "DSHS & Medicaid",
+      description: "Getting licensed so we can work directly with the state to serve families who need support"
     },
     {
-      channel: "Adult Family Home Partnerships",
-      description: "Direct relationships with AFHs struggling with caregiver shortages"
+      channel: "Adult Family Homes",
+      description: "These facilities are desperate for reliable CNAs. We know the people running them and can help fast."
     },
     {
-      channel: "Community Outreach",
-      description: "Churches, senior centers, immigrant communities, and local organizations"
+      channel: "Community",
+      description: "Churches, senior centers, immigrant communities—places where families actually look for help"
     },
     {
-      channel: "Digital Presence",
-      description: "Google Business Profile, social media, and website for local discovery and trust-building"
+      channel: "Online",
+      description: "Google, Facebook, a clean website. Making it easy for people to find us and understand what we do."
     }
   ];
 
@@ -167,19 +161,19 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/45 z-10" />
         <div className="container relative z-20">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-accent/20 text-accent border-0">Reliable Care. Real Impact.</Badge>
+            <Badge className="mb-4 bg-accent/20 text-accent border-0">Real care. Real impact.</Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Care That Matters. Jobs That Empower.
+              Caregiving That Actually Works
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              ForeverGreen connects vulnerable adults with vetted, compassionate caregivers while creating stable jobs for single mothers and reinvesting into communities in Ghana.
+              We connect families with caregivers they can trust. We pay caregivers fairly. And we put money back into communities that need it. That's it. That's the whole thing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Join Our Team <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Request Care
+                Find a Caregiver
               </Button>
             </div>
           </div>
@@ -192,15 +186,15 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">$4.5B</p>
-              <p className="text-sm text-muted-foreground">Total Addressable Market in Home Care</p>
+              <p className="text-sm text-muted-foreground">That's the size of the home care market. It's huge.</p>
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">33%</p>
-              <p className="text-sm text-muted-foreground">Sustainable Margins with Values-Based Model</p>
+              <p className="text-sm text-muted-foreground">Our margins. Good enough to pay people well and stay sustainable.</p>
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">2 Communities</p>
-              <p className="text-sm text-muted-foreground">Local & Global Impact Through Reinvestment</p>
+              <p className="text-sm text-muted-foreground">Washington and Ghana. Both matter to us.</p>
             </div>
           </div>
         </div>
@@ -209,9 +203,9 @@ export default function Home() {
       {/* Why ForeverGreen */}
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Why ForeverGreen?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Why Us?</h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
-            We're not just filling shifts. We're building stability for vulnerable adults, creating dignified jobs for caregivers, and proving that business can be both profitable and purposeful.
+            We're not trying to be everything to everyone. We're just trying to do this one thing right.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -240,15 +234,18 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Meet Sequoia Conner</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Hey, I'm Sequoia</h2>
               <p className="text-lg text-foreground mb-4 leading-relaxed">
-                As a single mother and experienced care-coordination advocate, I've spent years supporting families, caregivers, and Adult Family Homes through the complexities of Washington's long-term care system. I saw firsthand how caregiver burnout and unreliability devastate vulnerable adults and their families.
+                I'm a single mom. For years I worked 12-hour days doing care coordination—helping families find caregivers, helping caregivers find work, navigating DSHS. I got really good at it. But I was doing it for someone else.
               </p>
               <p className="text-lg text-foreground mb-4 leading-relaxed">
-                That's when I realized I could build something better. ForeverGreen isn't just a business—it's a response to a crisis. By combining rigorous hiring, values-based matching, and a commitment to reinvesting into communities, we're proving that care can be both reliable and transformative.
+                Then I realized: I could build this myself. I could create a staffing company that actually cares about both sides—caregivers AND families. That pays fairly. That hires people for the right reasons. That puts money back into communities.
+              </p>
+              <p className="text-lg text-foreground mb-4 leading-relaxed">
+                I talked to families desperate for reliable caregivers. I talked to caregivers who wanted better work. They all said the same thing: "Yes, we need this." So here we are.
               </p>
               <p className="text-lg text-foreground leading-relaxed">
-                Every caregiver we hire, every family we serve, and every hour of care we provide is an investment in stability, dignity, and opportunity—here in Washington and in Ghana.
+                Every caregiver we hire, every family we serve—that's stability. That's dignity. That's opportunity. And some of that goes to kids in Ghana who need it too.
               </p>
             </div>
             <div 
@@ -263,10 +260,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Venture Highlights */}
+      {/* What We've Done */}
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Our Progress</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">What We've Built So Far</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {ventureHighlights.map((highlight, idx) => (
               <div key={idx} className="flex gap-4">
@@ -281,23 +278,27 @@ export default function Home() {
       {/* Business Model */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">The Business Model</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">How This Works</h2>
           
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-6">How We Work</h3>
+              <h3 className="text-2xl font-bold text-primary mb-6">The Simple Version</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="font-semibold text-primary mb-2">Revenue Generation</p>
-                  <p className="text-foreground">We bill $30/hour for in-home care services to DSHS, Adult Family Homes, and private-pay families. Each client averages 30 hours of care per month, creating predictable, recurring revenue.</p>
+                  <p className="font-semibold text-primary mb-2">We Bill $30/Hour</p>
+                  <p className="text-foreground">Families and Adult Family Homes pay us $30 per hour for care. DSHS covers it for people on Medicaid.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary mb-2">Sustainable Economics</p>
-                  <p className="text-foreground">We pay caregivers $20/hour, creating a $10/hour margin before overhead. Our low-overhead model scales without heavy infrastructure or large capital investment.</p>
+                  <p className="font-semibold text-primary mb-2">We Pay Caregivers $20/Hour</p>
+                  <p className="text-foreground">That's a $10 margin per hour. After overhead, we're sustainable. Caregivers get paid well for their work.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary mb-2">Multiple Revenue Channels</p>
-                  <p className="text-foreground">DSHS contracting, Adult Family Home partnerships, and private-pay families create a diversified, stable client pipeline and long-term sustainability.</p>
+                  <p className="font-semibold text-primary mb-2">Each Client Gets About 30 Hours a Month</p>
+                  <p className="text-foreground">That's predictable, recurring revenue. As we add more clients, everything scales without needing to hire a huge team.</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-primary mb-2">Multiple Revenue Streams</p>
+                  <p className="text-foreground">DSHS contracts, Adult Family Homes, private families. Diversified so we're not dependent on one source.</p>
                 </div>
               </div>
             </div>
@@ -313,9 +314,9 @@ export default function Home() {
           </div>
 
           <div className="bg-accent/10 border border-accent rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-primary mb-8">Key Metrics</h3>
+            <h3 className="text-2xl font-bold text-primary mb-8">The Numbers</h3>
             <div className="grid md:grid-cols-3 gap-8">
-              {businessMetrics.slice(0, 6).map((metric, idx) => (
+              {businessMetrics.map((metric, idx) => (
                 <div key={idx}>
                   <p className="text-sm text-muted-foreground font-semibold mb-2">{metric.label}</p>
                   <p className="text-3xl font-bold text-primary">{metric.value}</p>
@@ -331,7 +332,7 @@ export default function Home() {
         <div className="container">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">For Caregivers</h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
-            Join a team that values your work, supports your growth, and knows that the care you provide changes lives.
+            You do hard work. You deserve to be treated like it.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -344,8 +345,8 @@ export default function Home() {
           </div>
 
           <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">Ready to Make a Difference?</h3>
-            <p className="mb-6 text-lg">Join ForeverGreen and build a career with purpose, stability, and community impact.</p>
+            <h3 className="text-2xl font-bold mb-4">Ready to Make a Real Difference?</h3>
+            <p className="mb-6 text-lg">We're hiring caregivers who care. Let's talk.</p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
               Apply Now <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -358,7 +359,7 @@ export default function Home() {
         <div className="container">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">For Families & Adult Family Homes</h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
-            Finding reliable, compassionate caregivers shouldn't be a struggle. We match vetted professionals with your specific needs.
+            Finding a caregiver you can trust shouldn't be this hard. We make it easier.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -371,19 +372,19 @@ export default function Home() {
           </div>
 
           <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">Get the Care You Deserve</h3>
-            <p className="mb-6 text-lg">Contact us today to discuss your care needs and find the right caregiver match.</p>
+            <h3 className="text-2xl font-bold mb-4">Let's Find the Right Caregiver</h3>
+            <p className="mb-6 text-lg">Tell us what you need. We'll listen and find someone who's a good fit.</p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Request Care <ArrowRight className="ml-2 w-4 h-4" />
+              Get Started <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Go-to-Market Strategy */}
+      {/* How We Reach You */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">How We Reach You</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">How We Find People</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {goToMarketChannels.map((item, idx) => (
               <Card key={idx} className="p-8 bg-secondary/50 border-l-4 border-l-accent">
@@ -395,32 +396,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Competitive Advantage */}
+      {/* What Makes Us Different */}
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">What Sets Us Apart</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">What's Different About Us</h2>
           
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-6">Our Competitive Advantage</h3>
+              <h3 className="text-2xl font-bold text-primary mb-6">We Hire Differently</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="font-semibold text-primary mb-2">Values-Based Hiring</p>
-                  <p className="text-foreground">We screen for emotional maturity, cultural competence, and long-term commitment—not just credentials. This dramatically reduces turnover and ensures consistent, compassionate care.</p>
+                  <p className="font-semibold text-primary mb-2">We Look for Character</p>
+                  <p className="text-foreground">Not just credentials. We want people who show up, who care about their clients, who have emotional maturity. That matters more than anything.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary mb-2">Dual-Impact Mission</p>
-                  <p className="text-foreground">We reinvest a portion of revenue into programs supporting single mothers locally and children in Ghana. This creates deeper purpose for caregivers and stronger community connections.</p>
+                  <p className="font-semibold text-primary mb-2">We Reinvest in Communities</p>
+                  <p className="text-foreground">Part of what we make goes back. Single moms in Washington get training and support. Kids in Ghana get opportunities. That's built into who we are.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-primary mb-2">Hands-On Approach</p>
-                  <p className="text-foreground">Unlike larger agencies, we provide direct communication, thoughtful matching, and relationship-driven support that builds trust with families, AFHs, and DSHS partners.</p>
+                  <p className="font-semibold text-primary mb-2">We're Actually Small</p>
+                  <p className="text-foreground">We're not a huge corporation. You talk to us directly. We know your name. We solve problems fast. We care about what happens.</p>
                 </div>
               </div>
             </div>
 
             <Card className="p-8 bg-white">
-              <h3 className="text-lg font-bold text-primary mb-6">Competitors in the Space</h3>
+              <h3 className="text-lg font-bold text-primary mb-6">Other Companies Out There</h3>
               <div className="space-y-4">
                 {competitors.map((comp, idx) => (
                   <div key={idx} className="pb-4 border-b border-border last:border-0">
@@ -431,52 +432,35 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground mt-6">
-                ForeverGreen combines professional reliability with heart-centered mission, values-based hiring, and community reinvestment that larger agencies overlook.
+              <p className="text-sm text-muted-foreground mt-6">
+                They're good companies. But they're big. We're different because we're small, we care about the people we hire, and we put money back into communities.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Our Team</h2>
-          <Card className="p-12 bg-secondary/50 text-center border-l-4 border-l-accent">
-            <div className="w-20 h-20 bg-accent/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-              <Users className="w-10 h-10 text-accent" />
-            </div>
-            <h3 className="text-2xl font-bold text-primary mb-2">Sequoia Conner</h3>
-            <p className="text-lg text-accent font-semibold mb-4">Founder & CEO</p>
-            <p className="text-foreground max-w-2xl mx-auto">
-              Single mother, care-coordination advocate, and mission-driven entrepreneur building ForeverGreen to fill critical care gaps in Washington while creating opportunity and impact in communities here and in Ghana.
-            </p>
-          </Card>
-        </div>
-      </section>
-
       {/* Our Impact */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">Our Dual-Impact Mission</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">Why We Do This</h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Local Impact</h3>
+              <h3 className="text-2xl font-bold mb-4">Here in Washington</h3>
               <p className="text-lg text-primary-foreground/90 leading-relaxed">
-                We create stable, dignified employment for single mothers and underserved caregivers in Washington. Every caregiver we hire is an investment in family stability and economic opportunity.
+                We create real jobs for single moms and caregivers who want steady work. Not gig work. Not side hustles. Real paychecks, real stability, real respect.
               </p>
             </div>
             <div>
               <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
                 <Globe className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Global Impact</h3>
+              <h3 className="text-2xl font-bold mb-4">In Ghana</h3>
               <p className="text-lg text-primary-foreground/90 leading-relaxed">
-                We reinvest a portion of every contract into programs supporting women and children in Ghana. Your care becomes their opportunity.
+                We reinvest a portion of what we make into programs that support women and kids. Because opportunity matters everywhere.
               </p>
             </div>
           </div>
@@ -489,13 +473,13 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Let's Connect</h2>
             <p className="text-lg text-foreground mb-12">
-              Whether you're a caregiver ready to make a difference, a family seeking reliable care, or a partner interested in our mission—we'd love to hear from you.
+              Whether you're looking for work, looking for a caregiver, or just want to chat about what we're doing—reach out.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="p-6 bg-white">
                 <Phone className="w-8 h-8 text-accent mx-auto mb-3" />
-                <p className="text-sm text-muted-foreground">Call Us</p>
+                <p className="text-sm text-muted-foreground">Call or Text</p>
                 <p className="font-semibold text-primary">Coming Soon</p>
               </Card>
               <Card className="p-6 bg-white">
@@ -505,7 +489,7 @@ export default function Home() {
               </Card>
               <Card className="p-6 bg-white">
                 <MapPin className="w-8 h-8 text-accent mx-auto mb-3" />
-                <p className="text-sm text-muted-foreground">Location</p>
+                <p className="text-sm text-muted-foreground">We're Based In</p>
                 <p className="font-semibold text-primary">Lakewood, WA</p>
               </Card>
             </div>
@@ -515,7 +499,7 @@ export default function Home() {
                 Join Our Team
               </Button>
               <Button size="lg" variant="outline">
-                Request Care
+                Find a Caregiver
               </Button>
             </div>
           </div>
@@ -533,28 +517,28 @@ export default function Home() {
                 </div>
                 <span className="font-bold text-primary">ForeverGreen</span>
               </div>
-              <p className="text-sm text-muted-foreground">Care that matters. Jobs that empower.</p>
+              <p className="text-sm text-muted-foreground">Care that works. Jobs that matter. Impact that's real.</p>
             </div>
             <div>
               <h4 className="font-bold text-primary mb-4">For Caregivers</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Join Our Team</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Apply Now</a></li>
                 <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Why ForeverGreen</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-primary mb-4">For Families</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Request Care</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Our Services</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Find a Caregiver</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">How It Works</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Contact Us</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-primary mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
                 <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Our Mission</a></li>
                 <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
               </ul>
@@ -562,7 +546,7 @@ export default function Home() {
           </div>
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
             <p>© 2026 ForeverGreen Staffing Solutions. All rights reserved.</p>
-            <p className="mt-2">Lakewood, Washington | Building care. Creating opportunity. Changing lives.</p>
+            <p className="mt-2">Lakewood, Washington | Real care. Real jobs. Real impact.</p>
           </div>
         </div>
       </footer>
