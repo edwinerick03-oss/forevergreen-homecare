@@ -140,6 +140,7 @@ export default function Home() {
             <a href="#mission" className="text-sm font-medium hover:text-primary transition-colors">Our Mission</a>
             <a href="#for-caregivers" className="text-sm font-medium hover:text-primary transition-colors">For Caregivers</a>
             <a href="#for-families" className="text-sm font-medium hover:text-primary transition-colors">For Families</a>
+            <a href="/resources" className="text-sm font-medium hover:text-primary transition-colors">Resources</a>
           </nav>
           <div className="flex gap-3">
             <Button variant="outline" size="sm">Log In</Button>
@@ -538,8 +539,8 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-primary mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Our Mission</a></li>
+                <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="/resources" className="text-muted-foreground hover:text-primary transition-colors">Resources</a></li>
                 <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
