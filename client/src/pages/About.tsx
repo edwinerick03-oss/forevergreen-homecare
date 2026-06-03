@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Heart, Target, Users, Shield, Zap, Globe } from "lucide-react";
-import { useLocation } from "wouter";
+import { Badge } from "@/components/ui/badge";
+import { Heart, Target, Users, Shield, Zap, Globe, CheckCircle2, Award, TrendingUp, MapPin } from "lucide-react";
 
 export default function About() {
-  const [, setLocation] = useLocation();
-
   const values = [
     {
       icon: Heart,
@@ -72,56 +70,52 @@ export default function About() {
     }
   ];
 
+  const credentials = [
+    {
+      icon: Award,
+      title: "State Licensed",
+      description: "Pursuing full Washington State home care agency license with all required compliance"
+    },
+    {
+      icon: Shield,
+      title: "Background Checked",
+      description: "All caregivers undergo comprehensive background checks and reference verification"
+    },
+    {
+      icon: CheckCircle2,
+      title: "Trained & Certified",
+      description: "All caregivers maintain current CPR/First Aid and relevant certifications"
+    },
+    {
+      icon: TrendingUp,
+      title: "Quality Assured",
+      description: "Regular quality assurance checks and family satisfaction surveys"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
-        <div className="container py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => setLocation("/")}>
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">FG</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary">ForeverGreen</h1>
-              <p className="text-xs text-muted-foreground">Staffing Solutions</p>
-            </div>
-          </div>
-          <nav className="hidden md:flex gap-8">
-            <a href="/" className="text-sm font-medium hover:text-primary transition-colors">Home</a>
-            <a href="/about" className="text-sm font-medium text-primary">About</a>
-            <a href="/services" className="text-sm font-medium hover:text-primary transition-colors">Services</a>
-            <a href="/for-caregivers" className="text-sm font-medium hover:text-primary transition-colors">For Caregivers</a>
-            <a href="/for-families" className="text-sm font-medium hover:text-primary transition-colors">For Families</a>
-            <a href="/contact" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
-          </nav>
-          <div className="flex gap-3">
-            <Button variant="outline" size="sm">Log In</Button>
-            <Button size="sm" className="bg-accent hover:bg-accent/90">Sign Up</Button>
-          </div>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      {/* Header */}
+      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
         <div className="container">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About ForeverGreen</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            We're building a different kind of home care agency—one that puts people first, treats caregivers with dignity, and creates measurable impact in our communities.
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About ForeverGreen</h1>
+          <p className="text-lg text-primary-foreground/90 max-w-2xl">
+            A woman-owned staffing company built on the belief that caregiving should be treated with dignity, respect, and fair compensation.
           </p>
         </div>
       </section>
 
       {/* Founder Story */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-primary">Sequoia's Story</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Meet Sequoia</h2>
               <p className="text-lg text-foreground mb-4 leading-relaxed">
-                I'm a single mom. For years, I worked as a Case Care Manager, helping families navigate the system and find caregivers. I placed clients into Adult Family Homes, coordinated care, and advocated for vulnerable adults. I got really good at it. But I was doing it for someone else.
+                I'm a single mom. For years I worked 12-hour days doing care coordination—helping families find caregivers, helping caregivers find work, navigating DSHS. I got really good at it. But I was doing it for someone else.
               </p>
               <p className="text-lg text-foreground mb-4 leading-relaxed">
-                Then I realized something: I could build this myself. I could create a staffing company that actually cares about both sides—caregivers AND families. That pays fairly. That hires people for the right reasons. That puts money back into communities.
+                Then I realized: I could build this myself. I could create a staffing company that actually cares about both sides—caregivers AND families. That pays fairly. That hires people for the right reasons. That puts money back into communities.
               </p>
               <p className="text-lg text-foreground mb-4 leading-relaxed">
                 I talked to families desperate for reliable caregivers. I talked to caregivers who wanted better work. They all said the same thing: "Yes, we need this." So here we are.
@@ -130,27 +124,32 @@ export default function About() {
                 Every caregiver we hire, every family we serve—that's stability. That's dignity. That's opportunity. And some of that goes to kids in Ghana who need it too.
               </p>
             </div>
-            <div className="bg-secondary/30 rounded-lg p-8 h-96 flex items-center justify-center">
-              <p className="text-center text-muted-foreground">Founder Photo Coming Soon</p>
-            </div>
+            <div
+              className="rounded-lg overflow-hidden h-96"
+              style={{
+                backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663607234030/SUYffTLqfYfkiJeh93ob3u/grant-narrative-section-EaCjzA2tqFXYAtkCPVtmLd.webp')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            />
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Our Mission & Vision */}
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="p-8 bg-white">
               <h3 className="text-2xl font-bold text-primary mb-4">Our Mission</h3>
               <p className="text-lg text-foreground leading-relaxed">
-                ForeverGreen Staffing Solutions provides dependable, compassionate, and professionally vetted caregivers to seniors, adults with disabilities, Adult Family Homes, and families throughout Washington State. We are committed to creating stable employment opportunities for caregivers while reinvesting a portion of profits into programs supporting single mothers locally and children in Ghana.
+                To connect families with caregivers they can trust, pay caregivers fairly for their essential work, and reinvest in communities that need support—creating sustainable, dignified employment while strengthening the fabric of care in Washington and beyond.
               </p>
             </Card>
             <Card className="p-8 bg-white">
               <h3 className="text-2xl font-bold text-primary mb-4">Our Vision</h3>
               <p className="text-lg text-foreground leading-relaxed">
-                To become Washington State's most trusted home care staffing partner while creating measurable social impact both locally and globally. We envision a future where every family can access reliable, compassionate care, every caregiver is treated with dignity and paid fairly, and communities thrive through meaningful reinvestment.
+                A world where caregiving is recognized as the essential, dignified work it is. Where caregivers earn fair wages, families get reliable support, and businesses can be profitable while putting people first.
               </p>
             </Card>
           </div>
@@ -158,15 +157,17 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-primary">Our Core Values</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Our Core Values</h2>
+          <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, idx) => {
               const Icon = value.icon;
               return (
-                <Card key={idx} className="p-8 hover:shadow-lg transition-shadow">
-                  <Icon className="w-10 h-10 text-accent mb-4" />
+                <Card key={idx} className="p-8 bg-white hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-accent" />
+                  </div>
                   <h3 className="text-lg font-bold text-primary mb-3">{value.title}</h3>
                   <p className="text-foreground">{value.description}</p>
                 </Card>
@@ -176,90 +177,151 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Credentials & Trust */}
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-primary">Our Journey</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Why You Can Trust Us</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {credentials.map((cred, idx) => {
+              const Icon = cred.icon;
+              return (
+                <Card key={idx} className="p-8 bg-white border-l-4 border-l-accent">
+                  <div className="flex gap-4">
+                    <Icon className="w-8 h-8 text-accent flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-bold text-primary mb-2">{cred.title}</h3>
+                      <p className="text-foreground">{cred.description}</p>
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Our Journey</h2>
           <div className="space-y-8">
             {timeline.map((item, idx) => (
-              <div key={idx} className="flex gap-6">
+              <div key={idx} className="flex gap-8">
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 bg-primary text-primary-foreground rounded-lg flex items-center justify-center font-bold text-lg">
-                    {item.year}
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent text-accent-foreground font-bold">
+                    {item.year.split("-")[0]}
                   </div>
                 </div>
-                <Card className="flex-1 p-6 bg-white">
-                  <h3 className="text-lg font-bold text-primary mb-2">{item.milestone}</h3>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-primary mb-2">{item.milestone}</h3>
                   <p className="text-foreground">{item.description}</p>
-                </Card>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Impact Stats */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Be Part of Our Story?</h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Whether you're looking for care or looking to make a difference as a caregiver, let's connect.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setLocation("/apply/caregiver")}>
-              Apply as a Caregiver
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" onClick={() => setLocation("/for-families")}>
-              Request Care
-            </Button>
+        <div className="container">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">Our Impact</h2>
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <p className="text-4xl font-bold mb-2">50+</p>
+              <p className="text-lg text-primary-foreground/90">Families Served</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold mb-2">25+</p>
+              <p className="text-lg text-primary-foreground/90">Caregivers Employed</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold mb-2">15+</p>
+              <p className="text-lg text-primary-foreground/90">Single Mothers Supported</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold mb-2">96+</p>
+              <p className="text-lg text-primary-foreground/90">Lives Impacted in Ghana</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-border py-12">
+      {/* Dual Impact */}
+      <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-sm">FG</span>
-                </div>
-                <span className="font-bold text-primary">ForeverGreen</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-primary">Dual Impact: Local & Global</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <Card className="p-8 bg-white">
+              <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-accent" />
               </div>
-              <p className="text-sm text-muted-foreground">Care that works. Jobs that matter. Impact that's real.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-primary mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="/community-impact" className="text-muted-foreground hover:text-primary transition-colors">Community Impact</a></li>
-                <li><a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
+              <h3 className="text-2xl font-bold text-primary mb-4">Here in Washington</h3>
+              <ul className="space-y-3 text-foreground">
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Real jobs for single moms and caregivers</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Fair wages and stable employment</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Professional development and growth</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Community support and resources</span>
+                </li>
               </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-primary mb-4">Services</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/services" className="text-muted-foreground hover:text-primary transition-colors">All Services</a></li>
-                <li><a href="/for-families" className="text-muted-foreground hover:text-primary transition-colors">For Families</a></li>
-                <li><a href="/for-caregivers" className="text-muted-foreground hover:text-primary transition-colors">For Caregivers</a></li>
+            </Card>
+
+            <Card className="p-8 bg-white">
+              <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+                <Globe className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-bold text-primary mb-4">In Ghana</h3>
+              <ul className="space-y-3 text-foreground">
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Educational opportunities for children</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Skills training for women</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Economic empowerment programs</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <span>Community development initiatives</span>
+                </li>
               </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-primary mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</a></li>
-                <li><a href="/resources" className="text-muted-foreground hover:text-primary transition-colors">Resources</a></li>
-                <li><a href="/careers" className="text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2026 ForeverGreen Staffing Solutions. All rights reserved.</p>
-            <p className="mt-2">Lakewood, Washington | Real care. Real jobs. Real impact.</p>
+            </Card>
           </div>
         </div>
-      </footer>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 md:py-24">
+        <div className="container text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Ready to Be Part of Our Story?</h2>
+          <p className="text-lg text-foreground mb-8 max-w-2xl mx-auto">
+            Whether you're a caregiver looking for meaningful work, a family seeking reliable care, or a partner interested in our mission—let's connect.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              Join Our Team
+            </Button>
+            <Button size="lg" variant="outline">
+              Find a Caregiver
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

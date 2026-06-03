@@ -13,7 +13,9 @@ import CommunityImpact from "./pages/CommunityImpact";
 import FundingPartnerships from "./pages/FundingPartnerships";
 import Careers from "./pages/Careers";
 import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 import Contact from "./pages/Contact";
+import Support from "./pages/Support";
 import CaregiverApplication from "./pages/CaregiverApplication";
 import FamilyApplication from "./pages/FamilyApplication";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -31,7 +33,9 @@ function Router() {
       <Route path={"/funding-partnerships"} component={FundingPartnerships} />
       <Route path={"/careers"} component={Careers} />
       <Route path={"/blog"} component={Blog} />
+      <Route path={/^\/blog\/.+$/} component={BlogArticle} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/support"} component={Support} />
       <Route path={"/apply/caregiver"} component={CaregiverApplication} />
       <Route path={"/apply/family"} component={FamilyApplication} />
       <Route path={"/admin"} component={AdminDashboard} />

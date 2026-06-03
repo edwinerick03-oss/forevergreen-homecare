@@ -140,3 +140,56 @@ export async function updateFamilyApplicationStatus(id: number, status: "pending
   const updated = await db.select().from(familyApplications).where(eq(familyApplications.id, id)).limit(1);
   return updated[0];
 }
+import { contactInquiries, InsertContactInquiry, supportDonations, InsertSupportDonation } from "../drizzle/schema";
+
+// Contact Inquiries
+export async function createContactInquiry(inquiry: InsertContactInquiry) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  await db.insert(contactInquiries).values(inquiry);
+  const created = await db.select().from(contactInquiries).where(eq(contactInquiries.email, inquiry.email)).orderBy(desc(contactInquiries.createdAt)).limit(1);
+  return created[0];
+}
+
+export async function getContactInquiries() {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  return await db.select().from(contactInquiries).orderBy(desc(contactInquiries.createdAt));
+}
+
+export async function updateContactInquiryStatus(id: number, status: "new" | "responded" | "closed") {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  await db.update(contactInquiries).set({ status }).where(eq(contactInquiries.id, id));
+  const updated = await db.select().from(contactInquiries).where(eq(contactInquiries.id, id)).limit(1);
+  return updated[0];
+}
+
+// Support/Donations
+export async function createSupportDonation(support: InsertSupportDonation) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  await db.insert(supportDonations).values(support);
+  const created = await db.select().from(supportDonations).where(eq(supportDonations.email, support.email)).orderBy(desc(supportDonations.createdAt)).limit(1);
+  return created[0];
+}
+
+export async function getSupportDonations() {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  return await db.select().from(supportDonations).orderBy(desc(supportDonations.createdAt));
+}
+
+export async function updateSupportDonationStatus(id: number, status: "pending" | "contacted" | "completed") {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  await db.update(supportDonations).set({ status }).where(eq(supportDonations.id, id));
+  const updated = await db.select().from(supportDonations).where(eq(supportDonations.id, id)).limit(1);
+  return updated[0];
+}

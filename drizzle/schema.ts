@@ -61,3 +61,37 @@ export const familyApplications = mysqlTable("family_applications", {
 
 export type FamilyApplication = typeof familyApplications.$inferSelect;
 export type InsertFamilyApplication = typeof familyApplications.$inferInsert;
+
+// Contact inquiries
+export const contactInquiries = mysqlTable("contact_inquiries", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 20 }),
+  subject: varchar("subject", { length: 255 }).notNull(),
+  message: text("message").notNull(),
+  inquiryType: mysqlEnum("inquiry_type", ["general", "caregiver", "family", "partnership", "other"]).default("general").notNull(),
+  status: mysqlEnum("status", ["new", "responded", "closed"]).default("new").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().onUpdateNow().notNull(),
+});
+
+export type ContactInquiry = typeof contactInquiries.$inferSelect;
+export type InsertContactInquiry = typeof contactInquiries.$inferInsert;
+
+// Support/Donations
+export const supportDonations = mysqlTable("support_donations", {
+  id: int("id").autoincrement().primaryKey(),
+  supporterName: varchar("supporter_name", { length: 255 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 20 }),
+  supportType: mysqlEnum("support_type", ["monetary", "volunteer", "partnership", "advocacy", "other"]).default("monetary").notNull(),
+  message: text("message"),
+  amount: varchar("amount", { length: 100 }),
+  status: mysqlEnum("status", ["pending", "contacted", "completed"]).default("pending").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().onUpdateNow().notNull(),
+});
+
+export type SupportDonation = typeof supportDonations.$inferSelect;
+export type InsertSupportDonation = typeof supportDonations.$inferInsert;
