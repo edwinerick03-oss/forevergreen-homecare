@@ -59,9 +59,9 @@ export default function Navigation() {
           aria-label="ForEvergreen Staffing Solutions - Home"
         >
           <img
-            src="/manus-storage/dark_background_logo_d1a924e2.png"
+            src="/manus-storage/dark_background_logo-removebg-preview_85de9c49.png"
             alt="ForEvergreen Staffing Solutions"
-            className="h-14 w-auto flex-shrink-0"
+            className="h-12 w-auto flex-shrink-0"
           />
         </button>
 

@@ -33,9 +33,9 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <img
-              src="/manus-storage/dark_background_logo_d1a924e2.png"
+              src="/manus-storage/dark_background_logo-removebg-preview_85de9c49.png"
               alt="ForEvergreen Staffing Solutions"
-              className="h-24 w-auto mb-4"
+              className="h-20 w-auto mb-4"
             />
             <p className="text-sm text-primary-foreground/80 mb-4">
               Connecting families with caregivers they can trust. Fair wages. Real impact.
