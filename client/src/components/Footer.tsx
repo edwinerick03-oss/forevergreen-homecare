@@ -32,17 +32,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
-                <span className="text-accent font-bold text-lg">FG</span>
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">ForEvergreen</h3>
-                <p className="text-sm text-primary-foreground/80">Staffing Solutions</p>
-              </div>
-            </div>
+            <img
+              src="/manus-storage/dark_background_logo_d1a924e2.png"
+              alt="ForEvergreen Staffing Solutions"
+              className="h-24 w-auto mb-4"
+            />
             <p className="text-sm text-primary-foreground/80 mb-4">
-              Connecting families with caregivers they can trust. Paying caregivers fairly. Putting money back into communities that need it.
+              Connecting families with caregivers they can trust. Fair wages. Real impact.
             </p>
             <div className="flex gap-3">
               <a

@@ -55,16 +55,14 @@ export default function Navigation() {
         {/* Logo */}
         <button
           onClick={() => handleNavClick("/")}
-          className="flex items-center gap-3 hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg px-2 py-1"
+          className="flex items-center gap-3 hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg px-2 py-1"
           aria-label="ForEvergreen Staffing Solutions - Home"
         >
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-            <span className="text-primary-foreground font-bold text-lg">FG</span>
-          </div>
-          <div className="hidden sm:block">
-            <h1 className="text-lg font-bold text-primary leading-tight">ForEvergreen</h1>
-            <p className="text-xs text-muted-foreground leading-tight">Staffing Solutions</p>
-          </div>
+          <img
+            src="/manus-storage/dark_background_logo_d1a924e2.png"
+            alt="ForEvergreen Staffing Solutions"
+            className="h-14 w-auto flex-shrink-0"
+          />
         </button>
 
         {/* Desktop Navigation */}
