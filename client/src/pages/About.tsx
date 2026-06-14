@@ -8,40 +8,40 @@ export default function About() {
     {
       icon: Heart,
       title: "Compassion",
-      description: "We care deeply about the wellbeing of every caregiver and family we serve."
+      description: "We understand that care is personal. We treat every family and caregiver with respect and kindness."
     },
     {
       icon: Shield,
-      title: "Integrity",
-      description: "We operate with honesty, transparency, and ethical standards in everything we do."
+      title: "Honesty",
+      description: "We're straightforward about what we do, how we do it, and what to expect."
     },
     {
       icon: Users,
       title: "Community",
-      description: "We invest in local communities and support those who need it most."
+      description: "We're rooted in Pierce County and committed to supporting our neighbors."
     },
     {
       icon: Zap,
-      title: "Excellence",
-      description: "We maintain the highest standards in caregiver screening, training, and care delivery."
+      title: "Quality",
+      description: "We screen carefully, train thoroughly, and support our caregivers to deliver excellent care."
     },
     {
       icon: Globe,
       title: "Impact",
-      description: "We measure success not just by revenue, but by lives changed and communities strengthened."
+      description: "We measure success by the families we serve, the caregivers we employ, and the communities we support."
     },
     {
       icon: Target,
-      title: "Accountability",
-      description: "We take responsibility for our commitments and deliver on our promises."
+      title: "Reliability",
+      description: "When families and caregivers count on us, we show up. Every time."
     }
   ];
 
   const timeline = [
     {
       year: "2024",
-      milestone: "Founded ForeverGreen Staffing Solutions",
-      description: "Sequoia Conner launches the company with a vision to transform home care staffing in Washington State."
+      milestone: "Founded ForEvergreen Staffing Solutions",
+      description: "Sequoia Conner launches the company to provide reliable, compassionate home care services in Washington."
     },
     {
       year: "2024",

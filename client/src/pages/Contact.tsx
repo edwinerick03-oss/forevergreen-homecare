@@ -54,7 +54,7 @@ export default function Contact() {
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl">
-            Have questions? Want to join our team? Looking for a caregiver? We'd love to hear from you.
+            Questions about our services? Ready to apply as a caregiver? Let's talk.
           </p>
         </div>
       </section>

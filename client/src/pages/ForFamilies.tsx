@@ -51,28 +51,28 @@ export default function ForFamilies() {
       {/* Why Choose ForeverGreen */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-primary">Why Families Choose ForeverGreen</h2>
+          <h2 className="text-4xl font-bold mb-12 text-primary">Why Families Choose ForEvergreen</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
                 icon: Shield,
                 title: "Vetted & Trustworthy",
-                description: "Every caregiver undergoes thorough background checks, reference verification, and skills assessment."
+                description: "Every caregiver passes background checks, reference verification, and skills testing."
               },
               {
                 icon: Heart,
-                title: "Personalized Matching",
-                description: "We listen to your needs and match you with someone who's a genuine fit for your family."
+                title: "Good Matches",
+                description: "We listen to what your family needs and find a caregiver who's a good fit."
               },
               {
                 icon: Users,
-                title: "Professional Support",
-                description: "You have direct access to our team for questions, concerns, or adjustments."
+                title: "Easy Communication",
+                description: "You can reach our team directly with questions or concerns anytime."
               },
               {
                 icon: CheckCircle2,
-                title: "Quality Assurance",
-                description: "We continuously monitor care quality and make adjustments to ensure satisfaction."
+                title: "Quality Care",
+                description: "We check in regularly to make sure everything's working well for your family."
               }
             ].map((item, idx) => {
               const Icon = item.icon;
@@ -96,23 +96,23 @@ export default function ForFamilies() {
             {[
               {
                 step: "1",
-                title: "Initial Consultation",
-                description: "We talk with you to understand your loved one's needs, preferences, and care requirements."
+                title: "Talk With Us",
+                description: "We listen to your situation and what kind of care your loved one needs."
               },
               {
                 step: "2",
-                title: "Assessment",
-                description: "We conduct a thorough assessment to determine the right type and level of care needed."
+                title: "Find the Right Fit",
+                description: "We figure out what type of care works best and match you with the right caregiver."
               },
               {
                 step: "3",
-                title: "Caregiver Matching",
-                description: "We carefully select caregivers whose skills and personality match your family's needs."
+                title: "Meet Your Caregiver",
+                description: "Your new caregiver spends time learning your routines and preferences."
               },
               {
                 step: "4",
-                title: "Care Begins",
-                description: "Your caregiver starts providing care with our ongoing support and quality monitoring."
+                title: "We're Here to Help",
+                description: "We stay in touch to make sure everything's working well and adjust as needed."
               }
             ].map((item, idx) => (
               <div key={idx} className="flex gap-6">

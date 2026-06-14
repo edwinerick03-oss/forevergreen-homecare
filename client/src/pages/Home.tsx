@@ -64,7 +64,7 @@ export default function Home() {
               <span className="text-primary-foreground font-bold text-lg">FG</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary">ForeverGreen</h1>
+              <h1 className="text-xl font-bold text-primary">ForEvergreen</h1>
               <p className="text-xs text-muted-foreground">Staffing Solutions</p>
             </div>
           </div>
@@ -96,19 +96,19 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="container relative z-20 h-full flex items-center">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-accent/20 text-accent border-0 animate-fade-in">Real care. Real impact.</Badge>
+            <Badge className="mb-4 bg-accent/20 text-accent border-0 animate-fade-in">Trusted Home Care in Tacoma & Lakewood</Badge>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
-              Caregiving That Actually Works
+              Quality Home Care When Your Family Needs It
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed animate-fade-in">
-              We connect families with caregivers they can trust. We pay caregivers fairly. And we put money back into communities that need it. That's it. That's the whole thing.
+              ForEvergreen Staffing Solutions connects Washington families with reliable, compassionate caregivers. We handle the screening, training, and scheduling so you can focus on what matters most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setLocation("/apply/caregiver")}>
-                Join Our Team <ArrowRight className="ml-2 w-4 h-4" />
+                Apply as a Caregiver <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => setLocation("/apply/family")}>
-                Find a Caregiver
+                Request Care
               </Button>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">{counts.mothers}+</p>
-              <p className="text-sm text-muted-foreground">Single Mothers Empowered</p>
+              <p className="text-sm text-muted-foreground">Single Mothers Supported</p>
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-primary mb-2">{counts.ghana}+</p>

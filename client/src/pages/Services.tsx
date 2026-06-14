@@ -8,44 +8,44 @@ export default function Services() {
     {
       icon: Heart,
       title: "Personal Care",
-      description: "Assistance with activities of daily living including bathing, grooming, dressing, toileting, and mobility support.",
+      description: "Help with bathing, grooming, dressing, toileting, and mobility so your loved one can stay comfortable at home.",
       benefits: ["Professional caregivers", "Personalized care plans", "Dignity and privacy respected"],
-      details: "Our caregivers are trained in safe personal care techniques and work with families to develop customized care plans that respect individual preferences and maintain dignity."
+      details: "Our caregivers are trained in safe personal care and work with your family to create a care plan that fits your needs and preferences."
     },
     {
       icon: Users,
       title: "Companion Care",
-      description: "Social engagement and emotional support for seniors and adults who need companionship and assistance with daily activities.",
+      description: "Friendly, caring support for seniors who need someone to talk to and help with daily activities.",
       benefits: ["Conversation and engagement", "Medication reminders", "Light housekeeping"],
-      details: "More than just presence—our companions provide meaningful interaction, help with daily tasks, and create a supportive environment for emotional wellbeing."
+      details: "Our companions provide real friendship and support, helping with meals, errands, and activities while keeping your loved one engaged and happy."
     },
     {
       icon: Clock,
       title: "Respite Care",
-      description: "Temporary care services that give family caregivers a break while ensuring their loved ones receive quality care.",
-      benefits: ["Flexible scheduling", "Trained caregivers", "Peace of mind for families"],
-      details: "We understand caregiver burnout. Our respite care services give family members the break they need while maintaining continuity of care for their loved ones."
+      description: "Temporary care that gives family caregivers a much-needed break while your loved one gets quality care.",
+      benefits: ["Flexible hours", "Trained caregivers", "Continuity of care"],
+      details: "Caregiver burnout is real. We provide respite care so you can take a break knowing your loved one is in good hands."
     },
     {
       icon: Home,
       title: "Home Support Services",
-      description: "Non-medical assistance with household tasks, meal preparation, shopping, and errands.",
-      benefits: ["Meal planning and prep", "Light housekeeping", "Errand assistance"],
-      details: "Help with the practical aspects of daily life—from meal prep to light housekeeping—so families can focus on what matters most."
+      description: "Help with cooking, cleaning, shopping, and errands so your family can focus on spending time together.",
+      benefits: ["Meal preparation", "Light housekeeping", "Shopping & errands"],
+      details: "We handle the household tasks so you can focus on what really matters—being together as a family."
     },
     {
       icon: Briefcase,
       title: "Adult Family Home Staffing",
-      description: "Dedicated caregiver placement and staffing solutions for Adult Family Homes and small residential care facilities.",
-      benefits: ["Reliable staffing", "Vetted caregivers", "Flexible scheduling"],
-      details: "We understand the unique staffing challenges of AFHs. We provide reliable, vetted caregivers who are committed to quality care and consistency."
+      description: "Reliable caregiver staffing for Adult Family Homes and residential care facilities in Pierce County.",
+      benefits: ["Reliable staffing", "Vetted caregivers", "Consistent quality"],
+      details: "We know the staffing challenges Adult Family Homes face. We provide reliable, well-trained caregivers who are committed to quality care."
     },
     {
       icon: Shield,
       title: "DSHS Client Support",
-      description: "Care services for clients receiving state-funded support through the Department of Social and Health Services.",
-      benefits: ["DSHS compliant", "Experienced caregivers", "Seamless coordination"],
-      details: "We're licensed to work with DSHS clients and handle all compliance requirements, making the process seamless for families and facilities."
+      description: "Care services for clients receiving state-funded support through Washington's Department of Social and Health Services.",
+      benefits: ["DSHS licensed", "Experienced caregivers", "Smooth coordination"],
+      details: "We're licensed and experienced with DSHS requirements. We handle the paperwork and coordination so families can focus on care."
     }
   ];
 
@@ -53,22 +53,22 @@ export default function Services() {
     {
       step: "1",
       title: "Initial Consultation",
-      description: "We listen to your needs, preferences, and concerns to understand what kind of care support would work best for your situation."
+      description: "We talk with you about your situation, your loved one's needs, and what kind of care support would work best."
     },
     {
       step: "2",
       title: "Caregiver Matching",
-      description: "We carefully match you with a caregiver whose skills, experience, and personality align with your needs and preferences."
+      description: "We find a caregiver who's a good fit for your family—someone with the right skills, experience, and personality."
     },
     {
       step: "3",
       title: "Orientation & Training",
-      description: "Your caregiver meets with you to learn your routines, preferences, and any specific care requirements. We ensure continuity and comfort."
+      description: "Your caregiver spends time learning your routines, preferences, and any special care needs. We make sure everything goes smoothly."
     },
     {
       step: "4",
       title: "Ongoing Support",
-      description: "We stay in touch, monitor quality, and make adjustments as needed. Your satisfaction and safety are our top priorities."
+      description: "We check in regularly, make sure everything's working well, and adjust as needed. Your satisfaction matters to us."
     }
   ];
 

@@ -56,13 +56,13 @@ export default function Navigation() {
         <button
           onClick={() => handleNavClick("/")}
           className="flex items-center gap-3 hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg px-2 py-1"
-          aria-label="ForeverGreen Staffing Solutions - Home"
+          aria-label="ForEvergreen Staffing Solutions - Home"
         >
           <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
             <span className="text-primary-foreground font-bold text-lg">FG</span>
           </div>
           <div className="hidden sm:block">
-            <h1 className="text-lg font-bold text-primary leading-tight">ForeverGreen</h1>
+            <h1 className="text-lg font-bold text-primary leading-tight">ForEvergreen</h1>
             <p className="text-xs text-muted-foreground leading-tight">Staffing Solutions</p>
           </div>
         </button>

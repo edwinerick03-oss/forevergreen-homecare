@@ -37,7 +37,7 @@ export default function Footer() {
                 <span className="text-accent font-bold text-lg">FG</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg">ForeverGreen</h3>
+                <h3 className="font-bold text-lg">ForEvergreen</h3>
                 <p className="text-sm text-primary-foreground/80">Staffing Solutions</p>
               </div>
             </div>

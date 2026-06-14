@@ -51,28 +51,28 @@ export default function ForCaregivers() {
       {/* Why ForeverGreen */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-primary">Why Work With ForeverGreen?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-primary">Why Work With ForEvergreen?</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
                 icon: DollarSign,
                 title: "Fair Pay",
-                description: "$20/hour for caregivers. Predictable paychecks. No games."
+                description: "$20/hour, predictable paychecks, and no surprises."
               },
               {
                 icon: Heart,
-                title: "Work That Matters",
-                description: "You're not just filling shifts. You're changing lives and supporting families."
+                title: "Real Work",
+                description: "You're helping families when they need it most. That matters."
               },
               {
                 icon: Users,
-                title: "You're Part of a Team",
-                description: "Not a number. We know your name, your story, and we actually care about your wellbeing."
+                title: "We Know You",
+                description: "You're not just a name in a system. We care about you and your wellbeing."
               },
               {
                 icon: Zap,
-                title: "Global Impact",
-                description: "Know that your work helps kids and families in Ghana. Every hour creates opportunity."
+                title: "Make a Difference",
+                description: "Your work helps families here in Washington and supports kids in Ghana."
               }
             ].map((item, idx) => {
               const Icon = item.icon;
@@ -127,7 +127,7 @@ export default function ForCaregivers() {
             <Card className="p-8 bg-secondary/30">
               <h3 className="text-lg font-bold text-primary mb-4">Required</h3>
               <ul className="space-y-2">
-                {["Valid CNA or HCA certification", "Background check clearance", "References", "Reliable transportation", "Professional demeanor"].map((item, idx) => (
+                {["Valid CNA or HCA certification", "Clean background check", "References", "Reliable transportation", "Professional attitude"].map((item, idx) => (
                   <li key={idx} className="text-foreground">• {item}</li>
                 ))}
               </ul>
@@ -135,7 +135,7 @@ export default function ForCaregivers() {
             <Card className="p-8 bg-secondary/30">
               <h3 className="text-lg font-bold text-primary mb-4">We Value</h3>
               <ul className="space-y-2">
-                {["Compassion", "Reliability", "Communication skills", "Problem-solving", "Cultural sensitivity"].map((item, idx) => (
+                {["Compassion", "Reliability", "Good communication", "Problem-solving", "Respect for others"].map((item, idx) => (
                   <li key={idx} className="text-foreground">• {item}</li>
                 ))}
               </ul>
