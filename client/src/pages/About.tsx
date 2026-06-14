@@ -1,15 +1,9 @@
-import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Target, Users, Shield, Zap, Globe, CheckCircle2, Award, TrendingUp, MapPin } from "lucide-react";
-import { updateMetaTags, pageConfigs } from "@/lib/seo";
 
 export default function About() {
-  useEffect(() => {
-    updateMetaTags(pageConfigs.about);
-  }, []);
-
   const values = [
     {
       icon: Heart,
