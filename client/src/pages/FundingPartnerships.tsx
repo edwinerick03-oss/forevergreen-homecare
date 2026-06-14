@@ -8,28 +8,28 @@ export default function FundingPartnerships() {
     {
       icon: DollarSign,
       title: "Small Business Grants",
-      description: "Washington State and federal grants for women-owned businesses in healthcare and social services",
+      description: "Washington State and federal grants for women-owned businesses in healthcare",
       examples: ["SBA Microloan Program", "Washington State Department of Commerce grants", "Community Development Block Grants"],
       status: "In Progress"
     },
     {
       icon: Target,
       title: "Impact Investing",
-      description: "Investment from funds focused on social impact, healthcare innovation, and women entrepreneurship",
+      description: "Investment from funds focused on social impact and healthcare innovation",
       examples: ["Mission-driven venture capital", "Community development finance", "Social impact bonds"],
       status: "Seeking"
     },
     {
       icon: Users,
       title: "Philanthropic Funding",
-      description: "Grants from foundations supporting workforce development, women's empowerment, and global impact",
+      description: "Grants from foundations supporting workforce development and community impact",
       examples: ["Gates Foundation", "Community foundations", "Women's empowerment funds"],
       status: "Seeking"
     },
     {
       icon: Handshake,
       title: "Strategic Partnerships",
-      description: "Collaborations with healthcare systems, senior living communities, and social service agencies",
+      description: "Working with healthcare systems, senior living communities, and social service agencies",
       examples: ["Adult Family Home networks", "DSHS partnerships", "Community health centers"],
       status: "Active"
     }
@@ -39,44 +39,44 @@ export default function FundingPartnerships() {
     {
       metric: "$4.5B",
       label: "Market Size",
-      description: "Home care services market in Washington State alone"
+      description: "Home care services market in Washington State"
     },
     {
       metric: "33%",
       label: "Healthy Margins",
-      description: "Sustainable business model with room for growth and reinvestment"
+      description: "Sustainable business model with room for growth"
     },
     {
       metric: "3-5 yrs",
       label: "Profitability Timeline",
-      description: "Path to profitability while maintaining values and fair wages"
+      description: "Path to profitability while keeping our values and paying caregivers fairly"
     },
     {
       metric: "2x Impact",
       label: "Dual Benefit",
-      description: "Local economic impact plus global community development"
+      description: "Impact for local families and communities in Ghana"
     }
   ];
 
   const partnerTypes = [
     {
       title: "Healthcare Systems",
-      description: "Hospitals and health networks needing reliable caregiver staffing for discharge planning and home health",
+      description: "Hospitals and health networks needing reliable caregiver staffing",
       benefits: ["Reduced turnover", "Better patient outcomes", "Compliance support"]
     },
     {
       title: "Senior Living Communities",
-      description: "Adult Family Homes and assisted living facilities seeking dependable staffing solutions",
+      description: "Adult Family Homes and assisted living facilities needing reliable staffing",
       benefits: ["Flexible staffing", "Vetted caregivers", "Consistent quality"]
     },
     {
       title: "Government Agencies",
-      description: "DSHS and other state agencies managing care for vulnerable populations",
+      description: "DSHS and state agencies managing care for vulnerable populations",
       benefits: ["Compliance ready", "Transparent pricing", "Outcome tracking"]
     },
     {
       title: "Community Organizations",
-      description: "Nonprofits focused on aging, disability, or community support services",
+      description: "Nonprofits focused on aging, disability, and community support",
       benefits: ["Mission alignment", "Collaborative approach", "Community impact"]
     }
   ];

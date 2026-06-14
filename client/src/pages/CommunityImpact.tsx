@@ -9,29 +9,29 @@ export default function CommunityImpact() {
       icon: Users,
       title: "Employment for Single Mothers",
       metric: "15+",
-      description: "Providing stable, dignified employment with fair wages for single mothers in Washington State",
-      details: "These aren't gig jobs or side hustles. They're real paychecks, real benefits, real stability."
+      description: "Providing stable employment with fair wages for single mothers in Washington",
+      details: "Real jobs, real paychecks, real stability. Not gig work or side hustles."
     },
     {
       icon: Home,
       title: "Families Served",
       metric: "50+",
       description: "Connecting families with caregivers they can trust",
-      details: "From seniors to people with disabilities, we're providing the care support families desperately need."
+      details: "Seniors, people with disabilities, families who need care support. We're here for them."
     },
     {
       icon: TrendingUp,
       title: "Caregivers Employed",
       metric: "25+",
       description: "Creating meaningful work in the home care industry",
-      details: "Caregivers who are valued, trained, and compensated fairly for their essential work."
+      details: "Caregivers who are valued, trained, and paid fairly for their important work."
     },
     {
       icon: Award,
       title: "Professional Development",
       metric: "100%",
       description: "All caregivers receive ongoing training and certification support",
-      details: "We invest in our team's growth and professional advancement."
+      details: "We invest in our caregivers' growth and career development."
     }
   ];
 
@@ -39,28 +39,28 @@ export default function CommunityImpact() {
     {
       icon: BookOpen,
       title: "Educational Access",
-      description: "Supporting children's education in Ghana through scholarships and school programs",
+      description: "Supporting children's education in Ghana with scholarships and school programs",
       metric: "50+",
       label: "Children Supported"
     },
     {
       icon: Users,
       title: "Women's Empowerment",
-      description: "Skills training and economic opportunities for women in Ghana",
+      description: "Skills training and job opportunities for women in Ghana",
       metric: "30+",
       label: "Women Trained"
     },
     {
       icon: Home,
       title: "Community Development",
-      description: "Infrastructure and resource projects in partner communities",
+      description: "Building infrastructure and resources in partner communities",
       metric: "5",
       label: "Communities Served"
     },
     {
       icon: Heart,
       title: "Healthcare Access",
-      description: "Supporting healthcare initiatives and maternal health programs",
+      description: "Supporting healthcare and maternal health programs",
       metric: "96+",
       label: "Lives Impacted"
     }

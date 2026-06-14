@@ -13,7 +13,7 @@ export default function Careers() {
       location: "Lakewood, WA (Serving all of Washington)",
       type: "Full-time / Part-time",
       salary: "$20/hour",
-      description: "Provide compassionate in-home care to families and seniors. Help with activities of daily living, mobility assistance, and personal care.",
+      description: "Provide in-home care to seniors and families. Help with daily living, mobility, and personal care.",
       requirements: [
         "Washington State CNA certification",
         "Valid driver's license and reliable transportation",
@@ -37,7 +37,7 @@ export default function Careers() {
       location: "Lakewood, WA (Serving all of Washington)",
       type: "Full-time / Part-time",
       salary: "$18-20/hour",
-      description: "Support clients with personal care, light housekeeping, meal preparation, and companionship. Work directly with families to provide quality care.",
+      description: "Support clients with personal care, housekeeping, meal prep, and companionship. Work directly with families.",
       requirements: [
         "Washington State HHA certification or CNA",
         "Valid driver's license and reliable transportation",
@@ -61,7 +61,7 @@ export default function Careers() {
       location: "Lakewood, WA",
       type: "Full-time",
       salary: "$35,000-$40,000/year",
-      description: "Manage client relationships, match caregivers with families, and ensure quality care delivery. Be the bridge between our caregivers and the families we serve.",
+      description: "Manage client relationships, match caregivers with families, and ensure quality care. Be the bridge between our team and the families we serve.",
       requirements: [
         "High school diploma or equivalent",
         "2+ years in healthcare or customer service",
@@ -85,7 +85,7 @@ export default function Careers() {
       location: "Lakewood, WA",
       type: "Full-time",
       salary: "$40,000-$50,000/year",
-      description: "Oversee day-to-day operations, manage schedules, handle billing, and support the growth of ForeverGreen. Help us scale our impact.",
+      description: "Oversee day-to-day operations, manage schedules, handle billing, and support our growth. Help us scale our impact.",
       requirements: [
         "Bachelor's degree or equivalent experience",
         "3+ years in operations or healthcare management",
