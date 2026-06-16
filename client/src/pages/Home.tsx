@@ -56,33 +56,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation Header */}
-      <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
-        <div className="container py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">FG</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary">ForEvergreen</h1>
-              <p className="text-xs text-muted-foreground">Staffing Solutions</p>
-            </div>
-          </div>
-          <nav className="hidden md:flex gap-8">
-            <a href="/" className="text-sm font-medium hover:text-primary transition-colors">Home</a>
-            <a href="/about" className="text-sm font-medium hover:text-primary transition-colors">About</a>
-            <a href="/services" className="text-sm font-medium hover:text-primary transition-colors">Services</a>
-            <a href="/for-families" className="text-sm font-medium hover:text-primary transition-colors">For Families</a>
-            <a href="/for-caregivers" className="text-sm font-medium hover:text-primary transition-colors">For Caregivers</a>
-            <a href="/contact" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
-          </nav>
-          <div className="flex gap-3">
-            <Button variant="outline" size="sm" onClick={() => setLocation("/apply/caregiver")}>Apply</Button>
-            <Button size="sm" className="bg-accent hover:bg-accent/90" onClick={() => setLocation("/apply/family")}>Request Care</Button>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section with Premium Image */}
       <section className="relative py-0 md:py-0 overflow-hidden h-[500px] md:h-[600px]">
         <div 
